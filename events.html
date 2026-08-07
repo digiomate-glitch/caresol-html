@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events | Care Solutions Hub</title>
+<meta name="description" content="Join us at our upcoming events, built around community and fun.">
+<link rel="canonical" href="https://caresol.co.uk/events.html">
+<link rel="icon" href="assets/images/favicon.png" type="image/png">
+<link rel="stylesheet" href="assets/css/style.css?v=3">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Events</div>
+    <h1 class="fade-up">Upcoming & Past Events</h1>
+    <p>Explore highlights from our past events and community activities.</p>
+	<h3 class="center" style="padding-top:20px;">Currently, there are no upcoming events.</h3>
+  </div>
+  <svg class="weald-divider" viewBox="0 0 1440 60" fill="none" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 30C120 10 240 50 360 30C480 10 600 50 720 30C840 10 960 50 1080 30C1200 10 1320 50 1440 30" stroke="#52705C" stroke-width="1.4" opacity="0.35"/>
+  </svg>
+</section>
+
+<section class="section bg-light" style="padding-top:0px;">
+  <div class="container">
+    <style>
+      .events-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        align-items: stretch;
+      }
+      .event-card {
+        background: #ffffff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 12px 36px rgba(0,0,0,0.06);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid rgba(0,0,0,0.03);
+        text-decoration: none;
+        color: inherit;
+        height: 100%;
+        cursor: pointer;
+      }
+      .event-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+      }
+      .event-poster {
+        width: 100%;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+      }
+      .event-content {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+      .event-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #1f3329;
+      }
+      .event-date {
+        font-size: 14px;
+        color: #7c5cc4;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+      .btn-view-details {
+        margin-top: auto;
+        display: inline-block;
+        padding: 10px 20px;
+        background: rgba(124, 92, 196, 0.1);
+        color: #7c5cc4;
+        border-radius: 8px;
+        font-weight: 600;
+        text-align: center;
+        transition: background 0.2s, color 0.2s;
+      }
+      .event-card:hover .btn-view-details {
+        background: #7c5cc4;
+        color: #fff;
+      }
+
+      @media (max-width: 992px) {
+        .events-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 768px) {
+        .events-grid {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+        .event-poster {
+          aspect-ratio: auto;
+          height: 350px;
+        }
+      }
+    </style>
+    <div class="section-head center">
+      <h2>Past Events</h2>
+    </div>
+    <div class="events-grid">
+	   <a href="event-beach-day.html" class="event-card">
+        <img src="assets/images/day-at-the-beach-events.jpeg" alt="Day at the Beach" class="event-poster">
+        <div class="event-content">
+          <h3 class="event-title">Day at the Beach</h3>
+          <div class="event-date">24 June 2026</div>
+          <span class="btn-view-details">View Details</span>
+        </div>
+      </a>
+      <a href="event-summer-games.html" class="event-card">
+        <img src="assets/images/cs-hub-summer-games-16-july2026.jpeg" alt="CS Hub Summer Games" class="event-poster">
+        <div class="event-content">
+          <h3 class="event-title">CS Hub Summer Games</h3>
+          <div class="event-date">16 July 2026</div>
+          <span class="btn-view-details">View Details</span>
+        </div>
+      </a>
+
+   
+    </div>
+  </div>
+</section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/main.js?v=3"></script>
+<script src="assets/js/loadComponents.js?v=3"></script>
+</body>
+</html>
+

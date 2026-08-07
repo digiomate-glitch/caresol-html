@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Care Solutions Hub | Supported Living &amp; Outreach Support in Tunbridge Wells, Kent</title>
+<meta name="description" content="Care Solutions Hub provides person-centred supported living and outreach support for adults with learning disabilities and autism across Tunbridge Wells and West Kent. Your choices, our commitment.">
+<meta name="keywords" content="supported living Tunbridge Wells, outreach support Kent, learning disability care, autism support Kent, domiciliary care West Kent, CQC registered care provider">
+<link rel="canonical" href="https://caresol.co.uk/">
+<meta property="og:title" content="Care Solutions Hub | Supported Living & Outreach Support in Kent">
+<meta property="og:description" content="Person-centred supported living and outreach support for adults with learning disabilities and autism across Tunbridge Wells and West Kent.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://caresol.co.uk/">
+<link rel="icon" href="assets/images/favicon.png" type="image/png">
+<link rel="stylesheet" href="assets/css/style.css?v=4">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Care Solutions Hub",
+  "url": "https://caresol.co.uk/",
+  "telephone": "+441892342712",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "193 St Johns Road",
+    "addressLocality": "Tunbridge Wells",
+    "postalCode": "TN4 9UU",
+    "addressCountry": "GB"
+  },
+  "areaServed": "Tunbridge Wells, West Kent",
+  "description": "Person-centred supported living and outreach support for adults with learning disabilities and autism."
+}
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Care Solutions Hub | Supported Living &amp; Outreach Support in Tunbridge Wells, Kent</title>
+<meta name="description" content="Care Solutions Hub provides person-centred supported living and outreach support for adults with learning disabilities and autism across Tunbridge Wells and West Kent. Your choices, our commitment.">
+<meta name="keywords" content="supported living Tunbridge Wells, outreach support Kent, learning disability care, autism support Kent, domiciliary care West Kent, CQC registered care provider">
+<link rel="canonical" href="https://caresol.co.uk/">
+<meta property="og:title" content="Care Solutions Hub | Supported Living & Outreach Support in Kent">
+<meta property="og:description" content="Person-centred supported living and outreach support for adults with learning disabilities and autism across Tunbridge Wells and West Kent.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://caresol.co.uk/">
+<link rel="icon" href="assets/images/favicon.png" type="image/png">
+<link rel="stylesheet" href="assets/css/style.css?v=4">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Care Solutions Hub",
+  "url": "https://caresol.co.uk/",
+  "telephone": "+441892342712",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "193 St Johns Road",
+    "addressLocality": "Tunbridge Wells",
+    "postalCode": "TN4 9UU",
+    "addressCountry": "GB"
+  },
+  "areaServed": "Tunbridge Wells, West Kent",
+  "description": "Person-centred supported living and outreach support for adults with learning disabilities and autism."
+}
+</script>
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<main id="main">
+
+<!-- ============================ HERO ============================ -->
+<!--<section class="hero">
+  <video src="assets/images/video-hero.mp4" autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2;"></video>
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0) 60%); z-index: -1;"></div>
+  <div class="container" style="position: relative; z-index: 1;">
+    <div class="hero-grid">
+      <div>
+        <h1 class="fade-up" style="color: #fff;">Your choices.<br>Your home.<br>Your path.</h1>
+        <p class="hero-lead" style="color: #fff; opacity: 0.9;">Care Solutions Hub provides person-centred supported living and outreach support for adults with learning disabilities and autism &mdash; built around what independence looks like for you.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-clay">Make a Referral
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="supported-living.html" class="btn btn-outline">Explore Our Services</a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>-->
+
+
+<section>
+<style>
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.audio-control-btn {
+  position: absolute;
+  bottom: 15px; /* 👈 Changed from top to bottom */
+  right: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+</style>
+
+<div class="video-container">
+  <video id="myVideo" autoplay muted playsinline loop>
+    <source src="assets/images/Autism-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <button class="audio-control-btn" id="audioToggleBtn">🔇 Unmute</button>
+</div>
+
+<script>
+  const video = document.getElementById("myVideo");
+  const audioToggleBtn = document.getElementById("audioToggleBtn");
+
+  audioToggleBtn.addEventListener("click", () => {
+    if (video.muted) {
+      video.muted = false;
+      video.play();
+      audioToggleBtn.textContent = "🔊 Mute";
+    } else {
+      video.muted = true;
+      audioToggleBtn.textContent = "🔇 Unmute";
+    }
+  });
+</script>
+</section>
+
+<!-- ============================ SPECIALIST EXPERTISE BANNER ============================ -->
+<section class="section bg-deepwood" style="padding: 60px 0;">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <span class="eyebrow" style="color: var(--moss-pale); margin-bottom: 16px;">Specialist Care Provider</span>
+      <h2 style="font-size: clamp(28px, 3.5vw, 42px); color: var(--white); margin-bottom: 24px;">Dedicated Expertise in Autism & Learning Disabilities</h2>
+      <p style="font-size: 18px; line-height: 1.7; color: rgba(255,255,255,0.9);">We are not a general domiciliary care agency. We are specialists committed to empowering adults with learning disabilities and autism through highly tailored, person-centred support.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================ WHAT WE OFFER ============================ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <h2>What We Offer</h2>
+     <!-- <p>Every person's path to independence looks different. We shape our support around the outcomes that matter to you, not the other way round.</p>-->
+    </div>
+    <div class="grid grid-2">
+      <div class="service-card">
+        <div class="ph ph--wide" style="border-radius:0; background-image: url('assets/images/Sopprted-living-image.jpg'); background-size: cover; background-position: center; border: 1px solid rgba(31,51,41,0.09);"></div>
+        <div class="body">
+          <span class="tag">Service 01</span>
+          <h3>Supported Living</h3>
+          <p>Personalised support for adults with learning disabilities and autism to live independently in their own home &mdash; with the right care, at the right pace, on your terms.</p>
+          <a href="supported-living.html" class="btn-ghost">Learn about Supported Living
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="ph ph--wide" style="border-radius:0; background-image: url('assets/images/Autism-outrech-support.jpg'); background-size: cover; background-position: center; border: 1px solid rgba(31,51,41,0.09);"></div>
+        <div class="body">
+          <span class="tag">Service 02</span>
+          <h3>Outreach Support</h3>
+          <p>Flexible, community-based support that helps you build skills, stay connected, and take part in the community &mdash; on your schedule, around your goals.</p>
+          <a href="outreach-support.html" class="btn-ghost">Learn about Outreach Support
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================ YOUR CHOICES ============================ -->
+<section class="section bg-sandstone">
+  <div class="container">
+    <div class="two-col">
+      <div class="col-media">
+        <div class="ph ph--tall" style="background-image: url('assets/images/choices_board_1785391986833.png'); background-size: cover; background-position: center; border-radius: var(--radius-l); border: 1px solid rgba(31,51,41,0.09);"></div>
+      </div>
+      <div style="color: white;">
+        <h2 class="fade-up" style="font-size:clamp(28px,3.2vw,38px);margin-top:14px;color: white;">To the people we support</h2>
+        <p class="fade-up" style="margin-top:18px;font-size:16.5px;color: white;">We are committed to listening to your needs and supporting you in the way that best suits you. We believe in your potential and always approach your care with positivity.</p>
+        <ul class="tick-list fade-up" style="margin-top:24px;">
+          <li style="color: white;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>We respect your choices and help you stay connected to the people who matter most, including family.</li>
+          <li style="color: white;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>We empower you to live life on your own terms, with control over where and how you live.</li>
+          <li style="color: white;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Every plan starts with what a good day looks like for you.</li>
+        </ul>
+        <a href="about.html" class="btn fade-up" style="margin-top:30px;background:white;color:var(--sandstone);font-weight:600;padding:14px 28px;border-radius:999px;">Read Our Approach</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ THREE PILLARS ============================ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <h2>Built on three commitments</h2>
+      <p>The same principles guide every support plan we write, every visit we make, and every relationship we build.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M20.8 8.6C20.8 13.8 12 20 12 20C12 20 3.2 13.8 3.2 8.6C3.2 5.6 5.6 3.2 8.6 3.2C10 3.2 11.3 3.8 12 4.8C12.7 3.8 14 3.2 15.4 3.2C18.4 3.2 20.8 5.6 20.8 8.6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h3>Supporting Families</h3>
+        <p>Family members and loved ones are always welcomed and actively involved. We work alongside you as part of the support team, every step of the way.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 21 4 16.5 4 10.5C4 7 6.7 4.5 9.8 4.5C11.1 4.5 12 5.3 12 5.3C12 5.3 12.9 4.5 14.2 4.5C17.3 4.5 20 7 20 10.5C20 16.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.6"/><path d="M8 9L11 12L16 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Empowering Professionals</h3>
+        <p>A skilled, dedicated workforce delivering person-centred support &mdash; continually improving to meet the unique needs of each individual we support.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 8.5L21 9.3L16 13.8L17.5 20.5L12 17L6.5 20.5L8 13.8L3 9.3L9.5 8.5L12 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+        <h3>Making a Difference</h3>
+        <p>Dedicated to exceptional care and support &mdash; creating an environment where everyone has the opportunity to live with dignity and independence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ STATS / DEEPWOOD BAND ============================ -->
+<section class="bg-sandstone">
+  <div class="container">
+    <div class="stat-band">
+      <div class="stat" style="display: flex; align-items: center; gap: 16px; padding: 24px 32px;">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M10 15h4"/><path d="M12 11v4"/></svg>
+        <div>
+          <strong style="font-size: 24px; margin-bottom: 4px;">100%</strong>
+          <span style="font-size: 14px;">Person-Centred Support</span>
+        </div>
+      </div>
+      <div class="stat" style="display: flex; align-items: center; gap: 16px; padding: 24px 32px;">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div>
+          <strong style="font-size: 24px; margin-bottom: 4px;">24/7</strong>
+          <span style="font-size: 14px;">Flexible Care Assistance</span>
+        </div>
+      </div>
+      <div class="stat" style="display: flex; align-items: center; gap: 16px; padding: 24px 32px;">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div>
+          <strong style="font-size: 24px; margin-bottom: 4px;">100% Safe</strong>
+          <span style="font-size: 14px;">Care Quality Standards</span>
+        </div>
+      </div>
+      <div class="stat" style="display: flex; align-items: center; gap: 16px; padding: 24px 32px;">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <div>
+          <strong style="font-size: 24px; margin-bottom: 4px;">UK</strong>
+          <span style="font-size: 14px;">Community Support Network</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ JOURNEY / TIMELINE ============================ -->
+<section class="section">
+  <div class="container">
+    <div class="two-col reverse">
+      <div>
+        <h2 style="font-size:clamp(28px,3.2vw,38px);margin-top:14px;">A simple, unhurried path onto support</h2>
+        <p style="margin-top:16px;color:var(--ink-soft);font-size:16.5px;max-width:480px;">We know starting a new care arrangement can feel like a big step &mdash; for the person and for their family. Here's what to expect.</p>
+        <div class="timeline" style="margin-top:40px;">
+          <div class="timeline-item">
+            <span class="step-tag">Step 1</span>
+            <h4>An initial conversation</h4>
+            <p>You, your family, or a professional gets in touch. We listen first &mdash; no forms, no jargon.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="step-tag">Step 2</span>
+            <h4>Getting to know you</h4>
+            <p>We meet you where you are to understand your goals, routines, and what independence should feel like.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="step-tag">Step 3</span>
+            <h4>A support plan, written with you</h4>
+            <p>Together we build a plan around your choices &mdash; reviewed and adjusted as your life changes.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="step-tag">Step 4</span>
+            <h4>Support that grows with you</h4>
+            <p>Our team stays close, checking in and adapting so your plan keeps working for you.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-media">
+        <div class="ph ph--tall" style="background-image: url('assets/images/timeline_parents_1785391996870.png'); background-size: cover; background-position: center; border-radius: var(--radius-l); border: 1px solid rgba(31,51,41,0.09);"></div>
+        </div>
+      </div>
+      <div></div>
+</section>
+
+<!-- ============================ OUR VALUES ============================ -->
+<section class="section" style="background-color: #fff;">
+  <div class="container">
+    <div class="section-head center" style="text-align: center; margin-bottom: 56px;">
+      <h2 class="home-section-heading text-purple">Our Values</h2>
+    </div>
+    
+
+    <div class="values-grid">
+      <!-- Card 1: Empowerment -->
+      <div class="value-card">
+        <div class="value-card-icon">
+          <!-- Empowerment icon: Sun/Shine -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </div>
+        <h3>Empowerment</h3>
+        <p>We support people to make informed choices and take control of their lives.</p>
+      </div>
+
+      <!-- Card 2: Empathy -->
+      <div class="value-card">
+        <div class="value-card-icon">
+          <!-- Empathy icon: Heart -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </div>
+        <h3>Empathy</h3>
+        <p>We care with understanding and compassion in everything we do.</p>
+      </div>
+
+      <!-- Card 3: Respect -->
+      <div class="value-card">
+        <div class="value-card-icon">
+          <!-- Respect icon: Shield/Check -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <polyline points="9 12 11 14 15 10"></polyline>
+          </svg>
+        </div>
+        <h3>Respect</h3>
+        <p>We honour individuality and protect dignity in every interaction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TESTIMONIALS ============================ -->
+<style>
+.quote-card {
+  height: 100%;
+}
+.quote-card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+.read-more-btn {
+  background: none;
+  border: none;
+  color: #7c5cc4;
+  font-weight: 600;
+  padding: 0;
+  margin-top: 8px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: left;
+  display: none; 
+}
+.testimonial-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.testimonial-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+.testimonial-modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.testimonial-modal.active .testimonial-modal-content {
+  transform: translateY(0);
+}
+.testimonial-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  line-height: 1;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.testimonial-modal-close:hover {
+  background: rgba(0,0,0,0.05);
+}
+.testimonial-modal-body p {
+  margin-bottom: 12px;
+}
+.testimonial-modal-body p:last-child {
+  margin-bottom: 0;
+}
+</style>
+
+<section class="section" style="background-image: url('assets/images/testimonial-banners-image.jpg'); background-attachment: fixed; background-size: cover; background-position: center; position: relative;">
+  <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.5); z-index: 1;"></div>
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="section-head" style="text-align: center; margin-left: auto; margin-right: auto;">
+      <h2 style="color: white;">What Our Clients Say</h2>
+    </div>
+    <div class="testimonial-carousel" style="position:relative;overflow:hidden;">
+      <div class="testimonial-track" id="testimonialTrack" style="display:flex; transition: transform 0.4s ease; gap: 24px; align-items: stretch;">
+        
+                <!-- Review 1 -->
+        <div class="quote-card quote-card-layout">
+          <svg width="30" height="24" viewBox="0 0 30 24" fill="none" class="quote-card-icon"><path d="M12.5 0C5.5 2.5 0 8 0 15C0 20 3.5 24 8 24C11.5 24 14 21 14 17.5C14 14.5 12 12 9 12C8 12 7 12.3 6.5 12.5C7 8.5 9.5 4.5 14 2L12.5 0ZM28.5 0C21.5 2.5 16 8 16 15C16 20 19.5 24 24 24C27.5 24 30 21 30 17.5C30 14.5 28 12 25 12C24 12 23 12.3 22.5 12.5C23 8.5 25.5 4.5 30 2L28.5 0Z" fill="currentColor"/></svg>
+          <div class="quote-card-body">
+            <div class="quote-card-text">JG has come on in leaps and bounds. We are so appreciative of the care, dedication, and love shown to him. You should all be incredibly proud of the brilliant work you do.</div>
+            <div class="full-text-hidden quote-hidden-content"><p>JG has come on in leaps and bounds. We are so appreciative of the care, dedication, and love shown to him. You should all be incredibly proud of the brilliant work you do.</p></div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <footer class="quote-author quote-author-text">&mdash; JG’s Dad</footer>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="quote-card quote-card-layout">
+          <svg width="30" height="24" viewBox="0 0 30 24" fill="none" class="quote-card-icon"><path d="M12.5 0C5.5 2.5 0 8 0 15C0 20 3.5 24 8 24C11.5 24 14 21 14 17.5C14 14.5 12 12 9 12C8 12 7 12.3 6.5 12.5C7 8.5 9.5 4.5 14 2L12.5 0ZM28.5 0C21.5 2.5 16 8 16 15C16 20 19.5 24 24 24C27.5 24 30 21 30 17.5C30 14.5 28 12 25 12C24 12 23 12.3 22.5 12.5C23 8.5 25.5 4.5 30 2L28.5 0Z" fill="currentColor"/></svg>
+          <div class="quote-card-body">
+            <div class="quote-card-text">The care, dedication, and professionalism shown by the staff and management have been outstanding. Thank you for your unwavering support during an incredibly difficult time.</div>
+            <div class="full-text-hidden quote-hidden-content"><p>The care, dedication, and professionalism shown by the staff and management have been outstanding. Thank you for your unwavering support during an incredibly difficult time.</p></div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <footer class="quote-author quote-author-text">&mdash; KB’s Father</footer>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="quote-card quote-card-layout">
+          <svg width="30" height="24" viewBox="0 0 30 24" fill="none" class="quote-card-icon"><path d="M12.5 0C5.5 2.5 0 8 0 15C0 20 3.5 24 8 24C11.5 24 14 21 14 17.5C14 14.5 12 12 9 12C8 12 7 12.3 6.5 12.5C7 8.5 9.5 4.5 14 2L12.5 0ZM28.5 0C21.5 2.5 16 8 16 15C16 20 19.5 24 24 24C27.5 24 30 21 30 17.5C30 14.5 28 12 25 12C24 12 23 12.3 22.5 12.5C23 8.5 25.5 4.5 30 2L28.5 0Z" fill="currentColor"/></svg>
+          <div class="quote-card-body">
+            <div class="quote-card-text">The care LK receives is unbelievable. The team go above and beyond every day, and I cannot thank them enough for everything they do.</div>
+            <div class="full-text-hidden quote-hidden-content"><p>The care LK receives is unbelievable. The team go above and beyond every day, and I cannot thank them enough for everything they do.</p></div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <footer class="quote-author quote-author-text">&mdash; LK’s Mother</footer>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="quote-card quote-card-layout">
+          <svg width="30" height="24" viewBox="0 0 30 24" fill="none" class="quote-card-icon"><path d="M12.5 0C5.5 2.5 0 8 0 15C0 20 3.5 24 8 24C11.5 24 14 21 14 17.5C14 14.5 12 12 9 12C8 12 7 12.3 6.5 12.5C7 8.5 9.5 4.5 14 2L12.5 0ZM28.5 0C21.5 2.5 16 8 16 15C16 20 19.5 24 24 24C27.5 24 30 21 30 17.5C30 14.5 28 12 25 12C24 12 23 12.3 22.5 12.5C23 8.5 25.5 4.5 30 2L28.5 0Z" fill="currentColor"/></svg>
+          <div class="quote-card-body">
+            <div class="quote-card-text">LB has really settled and built strong, trusted relationships with staff. The team know him well and provide kind, caring, person-centred support that helps him access local facilities, make choices, and enjoy greater independence.</div>
+            <div class="full-text-hidden quote-hidden-content"><p>LB has really settled and built strong, trusted relationships with staff. The team know him well and provide kind, caring, person-centred support that helps him access local facilities, make choices, and enjoy greater independence.</p></div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <footer class="quote-author quote-author-text">&mdash; LB’s Family</footer>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="quote-card quote-card-layout">
+          <svg width="30" height="24" viewBox="0 0 30 24" fill="none" class="quote-card-icon"><path d="M12.5 0C5.5 2.5 0 8 0 15C0 20 3.5 24 8 24C11.5 24 14 21 14 17.5C14 14.5 12 12 9 12C8 12 7 12.3 6.5 12.5C7 8.5 9.5 4.5 14 2L12.5 0ZM28.5 0C21.5 2.5 16 8 16 15C16 20 19.5 24 24 24C27.5 24 30 21 30 17.5C30 14.5 28 12 25 12C24 12 23 12.3 22.5 12.5C23 8.5 25.5 4.5 30 2L28.5 0Z" fill="currentColor"/></svg>
+          <div class="quote-card-body">
+            <div class="quote-card-text">The outstanding support, kindness, and dedication shown to PH have made a real difference. We are truly grateful for everything the team does.</div>
+            <div class="full-text-hidden quote-hidden-content"><p>The outstanding support, kindness, and dedication shown to PH have made a real difference. We are truly grateful for everything the team does.</p></div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <footer class="quote-author quote-author-text">&mdash; PH’s Mother</footer>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="quote-card quote-card-layout">
+          <svg width="30" height="24" viewBox="0 0 30 24" fill="none" class="quote-card-icon"><path d="M12.5 0C5.5 2.5 0 8 0 15C0 20 3.5 24 8 24C11.5 24 14 21 14 17.5C14 14.5 12 12 9 12C8 12 7 12.3 6.5 12.5C7 8.5 9.5 4.5 14 2L12.5 0ZM28.5 0C21.5 2.5 16 8 16 15C16 20 19.5 24 24 24C27.5 24 30 21 30 17.5C30 14.5 28 12 25 12C24 12 23 12.3 22.5 12.5C23 8.5 25.5 4.5 30 2L28.5 0Z" fill="currentColor"/></svg>
+          <div class="quote-card-body">
+            <div class="quote-card-text">The team’s dedication, professionalism, and understanding have provided stability and reassurance for both MA and our family. We truly value the positive difference they make.</div>
+            <div class="full-text-hidden quote-hidden-content"><p>The team’s dedication, professionalism, and understanding have provided stability and reassurance for both MA and our family. We truly value the positive difference they make.</p></div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <footer class="quote-author quote-author-text">&mdash; MA’s Mother</footer>
+        </div>
+
+        <!-- Review 7 -->
+        <div class="quote-card quote-card-layout">
+          <svg width="30" height="24" viewBox="0 0 30 24" fill="none" class="quote-card-icon"><path d="M12.5 0C5.5 2.5 0 8 0 15C0 20 3.5 24 8 24C11.5 24 14 21 14 17.5C14 14.5 12 12 9 12C8 12 7 12.3 6.5 12.5C7 8.5 9.5 4.5 14 2L12.5 0ZM28.5 0C21.5 2.5 16 8 16 15C16 20 19.5 24 24 24C27.5 24 30 21 30 17.5C30 14.5 28 12 25 12C24 12 23 12.3 22.5 12.5C23 8.5 25.5 4.5 30 2L28.5 0Z" fill="currentColor"/></svg>
+          <div class="quote-card-body">
+            <div class="quote-card-text">It is emotional to see EC so happy and surrounded by people who genuinely care. Thank you for everything you do.</div>
+            <div class="full-text-hidden quote-hidden-content"><p>It is emotional to see EC so happy and surrounded by people who genuinely care. Thank you for everything you do.</p></div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <footer class="quote-author quote-author-text">&mdash; EC’s Mother</footer>
+        </div>
+
+        <!-- Review 8 -->
+        <div class="quote-card quote-card-layout">
+          <svg width="30" height="24" viewBox="0 0 30 24" fill="none" class="quote-card-icon"><path d="M12.5 0C5.5 2.5 0 8 0 15C0 20 3.5 24 8 24C11.5 24 14 21 14 17.5C14 14.5 12 12 9 12C8 12 7 12.3 6.5 12.5C7 8.5 9.5 4.5 14 2L12.5 0ZM28.5 0C21.5 2.5 16 8 16 15C16 20 19.5 24 24 24C27.5 24 30 21 30 17.5C30 14.5 28 12 25 12C24 12 23 12.3 22.5 12.5C23 8.5 25.5 4.5 30 2L28.5 0Z" fill="currentColor"/></svg>
+          <div class="quote-card-body">
+            <div class="quote-card-text">Thank you for all the support and encouragement you provide. It is wonderful to see ZA so engaged, involved, and happy.</div>
+            <div class="full-text-hidden quote-hidden-content"><p>Thank you for all the support and encouragement you provide. It is wonderful to see ZA so engaged, involved, and happy.</p></div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <footer class="quote-author quote-author-text">&mdash; ZA’s Mother</footer>
+        </div>
+
+        <!-- Review 9 -->
+        <div class="quote-card quote-card-layout">
+          <svg width="30" height="24" viewBox="0 0 30 24" fill="none" class="quote-card-icon"><path d="M12.5 0C5.5 2.5 0 8 0 15C0 20 3.5 24 8 24C11.5 24 14 21 14 17.5C14 14.5 12 12 9 12C8 12 7 12.3 6.5 12.5C7 8.5 9.5 4.5 14 2L12.5 0ZM28.5 0C21.5 2.5 16 8 16 15C16 20 19.5 24 24 24C27.5 24 30 21 30 17.5C30 14.5 28 12 25 12C24 12 23 12.3 22.5 12.5C23 8.5 25.5 4.5 30 2L28.5 0Z" fill="currentColor"/></svg>
+          <div class="quote-card-body">
+            <div class="quote-card-text">JG has progressed so well and is now healthy, happy, and bright. We are so grateful for the dedication of the amazing team.</div>
+            <div class="full-text-hidden quote-hidden-content"><p>JG has progressed so well and is now healthy, happy, and bright. We are so grateful for the dedication of the amazing team.</p></div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <footer class="quote-author quote-author-text">&mdash; JG’s Mother</footer>
+        </div>
+
+        <!-- Review 10 -->
+        <div class="quote-card quote-card-layout">
+          <svg width="30" height="24" viewBox="0 0 30 24" fill="none" class="quote-card-icon"><path d="M12.5 0C5.5 2.5 0 8 0 15C0 20 3.5 24 8 24C11.5 24 14 21 14 17.5C14 14.5 12 12 9 12C8 12 7 12.3 6.5 12.5C7 8.5 9.5 4.5 14 2L12.5 0ZM28.5 0C21.5 2.5 16 8 16 15C16 20 19.5 24 24 24C27.5 24 30 21 30 17.5C30 14.5 28 12 25 12C24 12 23 12.3 22.5 12.5C23 8.5 25.5 4.5 30 2L28.5 0Z" fill="currentColor"/></svg>
+          <div class="quote-card-body">
+            <div class="quote-card-text">Thank you for your kindness and encouragement. It meant so much and made my day very special.</div>
+            <div class="full-text-hidden quote-hidden-content"><p>Thank you for your kindness and encouragement. It meant so much and made my day very special.</p></div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <footer class="quote-author quote-author-text">&mdash; LB’s Mother</footer>
+        </div>
+
+        <!-- Review 11 -->
+        <div class="quote-card quote-card-layout">
+          <svg width="30" height="24" viewBox="0 0 30 24" fill="none" class="quote-card-icon"><path d="M12.5 0C5.5 2.5 0 8 0 15C0 20 3.5 24 8 24C11.5 24 14 21 14 17.5C14 14.5 12 12 9 12C8 12 7 12.3 6.5 12.5C7 8.5 9.5 4.5 14 2L12.5 0ZM28.5 0C21.5 2.5 16 8 16 15C16 20 19.5 24 24 24C27.5 24 30 21 30 17.5C30 14.5 28 12 25 12C24 12 23 12.3 22.5 12.5C23 8.5 25.5 4.5 30 2L28.5 0Z" fill="currentColor"/></svg>
+          <div class="quote-card-body">
+            <div class="quote-card-text">Your attention to detail, compassion, and respect are exceptional. We cannot thank you enough for your love, dedication, and commitment to helping JG live a meaningful, engaging, and happy life.</div>
+            <div class="full-text-hidden quote-hidden-content"><p>Your attention to detail, compassion, and respect are exceptional. We cannot thank you enough for your love, dedication, and commitment to helping JG live a meaningful, engaging, and happy life.</p></div>
+            <button class="read-more-btn">Read More</button>
+          </div>
+          <footer class="quote-author quote-author-text">&mdash; JG’s Dad</footer>
+        </div>
+        
+      </div>
+
+      <!-- Controls -->
+      <div class="carousel-controls carousel-controls-wrapper">
+        <button id="prevTestimonial" class="carousel-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18L9 12L15 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button id="nextTestimonial" class="carousel-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18L15 12L9 6" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Check which texts need truncation and show read more
+  setTimeout(() => {
+    const textElements = document.querySelectorAll('.quote-card-text');
+    textElements.forEach(el => {
+      // We check if scrollHeight > clientHeight (with a small buffer for precision issues)
+      if (el.scrollHeight > el.clientHeight + 2) {
+        const btn = el.parentNode.querySelector('.read-more-btn');
+        if (btn) btn.style.display = 'inline-block';
+      }
+    });
+  }, 100);
+
+  // Modal logic
+  const modal = document.createElement('div');
+  modal.className = 'testimonial-modal';
+  modal.innerHTML = `
+    <div class="testimonial-modal-content">
+      <button class="testimonial-modal-close" aria-label="Close modal">&times;</button>
+      <div class="testimonial-modal-body"></div>
+      <footer class="testimonial-modal-author testimonial-modal-author-text"></footer>
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  const modalBody = modal.querySelector('.testimonial-modal-body');
+  const modalAuthor = modal.querySelector('.testimonial-modal-author');
+  const closeBtn = modal.querySelector('.testimonial-modal-close');
+
+  const openModal = (text, author) => {
+    modalBody.innerHTML = text;
+    modalAuthor.innerHTML = author;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeModal = () => {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const card = e.target.closest('.quote-card');
+      const text = card.querySelector('.full-text-hidden').innerHTML;
+      const author = card.querySelector('.quote-author').innerHTML;
+      openModal(text, author);
+    });
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+});
+</script>
+
+<!-- ============================ EVENTS ============================ -->
+<section class="section bg-light">
+  <div class="container">
+    <div class="section-head center">
+      <h2 class="home-section-heading">Events</h2>
+      <p class="home-section-subtitle">Join us at our upcoming events, built around community and fun.</p>
+    </div>
+    
+    <style>
+      .events-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+        align-items: stretch;
+      }
+      .event-card {
+        background: #ffffff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 12px 36px rgba(0,0,0,0.06);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid rgba(0,0,0,0.03);
+        text-decoration: none;
+        color: inherit;
+        height: 100%;
+        cursor: pointer;
+      }
+      .event-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+      }
+      .event-poster {
+        width: 100%;
+        aspect-ratio: 3/4;
+        object-fit: cover;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+      }
+      .event-content {
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+      .event-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #1f3329;
+      }
+      .event-date {
+        font-size: 14px;
+        color: #7c5cc4;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+      .btn-view-details {
+        margin-top: auto;
+        display: inline-block;
+        padding: 10px 20px;
+        background: rgba(124, 92, 196, 0.1);
+        color: #7c5cc4;
+        border-radius: 8px;
+        font-weight: 600;
+        text-align: center;
+        transition: background 0.2s, color 0.2s;
+      }
+      .event-card:hover .btn-view-details {
+        background: #7c5cc4;
+        color: #fff;
+      }
+
+      @media (max-width: 992px) {
+        .events-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 768px) {
+        .events-grid {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+        .event-poster {
+          aspect-ratio: auto;
+          height: 350px;
+        }
+      }
+    </style>
+
+    <div class="events-grid">
+      <!-- Event 1 -->
+	    <a href="event-beach-day.html" class="event-card">
+        <img src="assets/images/day-at-the-beach-events.jpeg" alt="Day at the Beach" class="event-poster">
+        <div class="event-content">
+          <h3 class="event-title">Day at the Beach</h3>
+          <div class="event-date">24 June 2026</div>
+          <span class="btn-view-details">View Details</span>
+        </div>
+      </a>
+    
+
+      <!-- Event 2 -->
+      <a href="event-summer-games.html" class="event-card">
+        <img src="assets/images/cs-hub-summer-games-16-july2026.jpeg" alt="CS Hub Summer Games" class="event-poster">
+        <div class="event-content">
+          <h3 class="event-title">CS Hub Summer Games</h3>
+          <div class="event-date">16 July 2026</div>
+          <span class="btn-view-details">View Details</span>
+        </div>
+      </a>
+	
+    </div>
+
+    <div class="events-btn-wrapper">
+      <a href="events.html" class="btn btn-purple">View All Events</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ WHO WE SUPPORT ============================ -->
+<section class="section" style="background-color:#fff">
+  <div class="container">
+    <div class="section-head center">
+      <h2>Support built around your world</h2>
+    </div>
+    <div class="grid grid-3">
+      <a href="supported-living.html" class="audience-card">
+        <h3>People We Support</h3>
+        <p>Explore how supported living and outreach can help you live independently, your way.</p>
+        <span class="btn-ghost">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="about.html" class="audience-card">
+        <h3>Families &amp; Carers</h3>
+        <p>See how we welcome loved ones into the care team and keep you informed every step.</p>
+        <span class="btn-ghost">Learn more <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a href="careers.html" class="audience-card">
+        <h3>Professionals &amp; Care Teams</h3>
+        <p>Join a workforce committed to continual learning and genuinely person-centred practice.</p>
+        <span class="btn-ghost">View careers <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ BLOG SECTION ============================ -->
+<section class="section" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="section-head center">
+      <h2 class="home-section-heading">Latest News & Blogs</h2>
+      <p>Stay updated with our latest stories, insights, and community highlights.</p>
+    </div>
+    
+    <div class="blog-grid">
+      <!-- Blog Card 1 -->
+      <article class="blog-card">
+        <img src="assets/images/volunteering-charity-people-and-ecology-concept.jpg" alt="Community Support" class="blog-card-image">
+        <div class="blog-card-content">
+          <div class="blog-card-date">July 20, 2026</div>
+          <h3 class="blog-card-title">Making a Real Difference in Our Community</h3>
+          <p class="blog-card-excerpt">Discover how our recent volunteering and community support initiatives are bringing people together and creating positive, lasting change for those in need.</p>
+          <a href="blog-community.html" class="blog-card-btn">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+
+      <!-- Blog Card 2 -->
+      <article class="blog-card">
+        <img src="assets/images/group-of-multi-generational-people-having-fun-toge.jpg" alt="Generational Fun" class="blog-card-image">
+        <div class="blog-card-content">
+          <div class="blog-card-date">July 12, 2026</div>
+          <h3 class="blog-card-title">Fostering Multi-Generational Connections</h3>
+          <p class="blog-card-excerpt">We hosted a wonderful afternoon bridging the gap between generations. Read about the joy and shared experiences that highlight the importance of connection.</p>
+          <a href="blog-generational.html" class="blog-card-btn">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+
+      <!-- Blog Card 3 -->
+      <article class="blog-card">
+        <img src="assets/images/mother-and-daughter-with-down-syndrome-having-meal.jpg" alt="Family Support" class="blog-card-image">
+        <div class="blog-card-content">
+          <div class="blog-card-date">July 05, 2026</div>
+          <h3 class="blog-card-title">Understanding Supported Independent Living</h3>
+          <p class="blog-card-excerpt">Navigating supported living can be challenging. In this post, we share practical insights and heartwarming stories of independence and growth.</p>
+          <a href="blog-supported-living.html" class="blog-card-btn">Read More <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+    </div>
+    
+    <div class="events-btn-wrapper">
+      <a href="blogs.html" class="btn btn-purple">View All Blogs</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CTA BAND ============================ -->
+<section class="section--tight">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>Join us in making a difference</h2>
+        <p>Whether you're looking for support, referring someone you care about, or exploring a career in care &mdash; we'd love to hear from you.</p>
+      </div>
+      <div class="home-cta-buttons">
+        <a href="contact.html" class="btn home-cta-btn-alt">Get in Touch</a>
+        <a href="careers.html" class="btn btn-outline">See Vacancies</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="assets/js/main.js?v=4"></script>
+<script src="assets/js/loadComponents.js?v=4"></script>
+</body>
+</html>
+
+
+
