@@ -165,62 +165,7 @@
 <script src="assets/js/main.js?v=3"></script>
   <script src="assets/js/loadComponents.js?v=3"></script>
   
-  <!-- Custom Modal -->
-  <div id="vacancy-modal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 9999; align-items: center; justify-content: center; backdrop-filter: blur(5px);">
-    <div style="background: white; border-radius: 24px; padding: 40px; max-width: 400px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.2); transform: translateY(0); margin: 20px;">
-      <div style="color: #115da7; margin-bottom: 20px; display: flex; justify-content: center;">
-        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="12" y1="8" x2="12" y2="12"></line>
-          <line x1="12" y1="16" x2="12.01" y2="16"></line>
-        </svg>
-      </div>
-      <h3 style="margin-bottom: 16px; color: #7c5cc4; font-size: 26px;">No Current Vacancies</h3>
-      <p style="color: var(--ink-soft); margin-bottom: 30px; font-size: 16px; line-height: 1.6;">There are currently no vacancies available. Please check back later for future opportunities.</p>
-      <button id="close-vacancy-modal" class="btn btn-clay" style="width: 100%; border: none;">OK</button>
-    </div>
-  </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const form = document.querySelector('.contact-form');
-      const modal = document.getElementById('vacancy-modal');
-      const closeBtn = document.getElementById('close-vacancy-modal');
-
-      if (form && modal && closeBtn) {
-        const inputs = form.querySelectorAll('input, textarea, select');
-        
-        const openModal = function() {
-          modal.style.display = 'flex';
-        };
-
-        closeBtn.addEventListener('click', function(e) {
-          e.preventDefault();
-          modal.style.display = 'none';
-        });
-        
-        const showVacancyMessage = function(e) {
-          if (e.target.value && e.target.value.trim() !== '' && e.target.value !== 'Support Worker') {
-            openModal();
-            if(e.target.tagName !== 'SELECT') {
-              e.target.value = ''; // clear input
-            }
-            e.target.blur(); // remove focus
-          }
-        };
-
-        inputs.forEach(input => {
-          input.addEventListener('input', showVacancyMessage);
-          input.addEventListener('change', showVacancyMessage);
-        });
-
-        form.addEventListener('submit', function(e) {
-          e.preventDefault();
-          openModal();
-        });
-      }
-    });
-  </script>
 </body>
 </html>
 
