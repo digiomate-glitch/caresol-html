@@ -467,7 +467,8 @@ button{font-family:inherit;}
   transform: translateY(-6px);
   box-shadow: var(--shadow-premium);
 }
-.quote-card svg{color:var(--sandstone);margin-bottom:24px; opacity: 0.3;}
+.quote-card .quote-card-icon {color:var(--sandstone);margin-bottom:24px; opacity: 0.3;}
+.quote-card .quote-stars svg { color: #FBBF24; opacity: 1; margin-bottom: 0; }
 .quote-card p{font-family:'Inter', sans-serif;font-size:16px;color:black;line-height:1.6;flex:1;}
 .quote-card footer{margin-top:32px;font-family:var(--font-mono);font-size:13px;letter-spacing:.08em;color:#115da7;text-transform:uppercase;}
 
