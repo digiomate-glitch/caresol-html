@@ -186,7 +186,14 @@ document.addEventListener('DOMContentLoaded', function () {
           btn.textContent = originalBtnText;
           btn.disabled = false;
           var successMsg = document.getElementById('form-success-message');
+          var careerSuccessMsg = document.getElementById('career-success-message');
           if (successMsg) successMsg.style.display = 'block';
+          if (careerSuccessMsg) {
+            careerSuccessMsg.style.display = 'block';
+            setTimeout(function() {
+              careerSuccessMsg.style.display = 'none';
+            }, 8000);
+          }
         } else {
           alert('Oops! There was a problem submitting your form');
           btn.textContent = originalBtnText;
