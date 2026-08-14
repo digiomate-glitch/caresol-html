@@ -17,6 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             }
             
+            // Re-initialize mobile dropdown toggle
+            const mobileDropdownToggle = document.querySelector('.mobile-dropdown-toggle');
+            const mobileDropdown = document.querySelector('.mobile-dropdown');
+            if (mobileDropdownToggle && mobileDropdown) {
+                mobileDropdownToggle.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    mobileDropdown.classList.toggle('open');
+                });
+            }
+            
             // Highlight active link
             const currentPath = window.location.pathname.split('/').pop() || 'index.html';
             document.querySelectorAll('.site-header a').forEach(link => {
