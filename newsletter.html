@@ -31,7 +31,7 @@
       
       <!-- June Newsletter -->
       <div class="pdf-card">
-        <img src="assets/images/newsletter_june.jpg" alt="June Monthly Bulletins Preview" class="pdf-card-image">
+        <canvas class="pdf-card-canvas" data-pdf="assets/images/June Monthly Bulletins.pdf" style="width: 100%; aspect-ratio: 1 / 1.414; object-fit: cover; border-bottom: 1px solid rgba(31,51,41,0.05);"></canvas>
         <div class="pdf-card-content">
           <h3 class="pdf-card-title">June Monthly Bulletins</h3>
           <a href="assets/images/June Monthly Bulletins.pdf" target="_blank" class="pdf-card-btn">
@@ -42,7 +42,7 @@
 
       <!-- July Newsletter -->
       <div class="pdf-card">
-        <img src="assets/images/newsletter_july.jpg" alt="July Monthly Bulletins Preview" class="pdf-card-image">
+        <canvas class="pdf-card-canvas" data-pdf="assets/images/July Monthly Bulletins.pdf" style="width: 100%; aspect-ratio: 1 / 1.414; object-fit: cover; border-bottom: 1px solid rgba(31,51,41,0.05);"></canvas>
         <div class="pdf-card-content">
           <h3 class="pdf-card-title">July Monthly Bulletins</h3>
           <a href="assets/images/July Monthly Bulletins.pdf" target="_blank" class="pdf-card-btn">
@@ -60,5 +60,29 @@
 
 <script src="assets/js/main.js?v=4"></script>
 <script src="assets/js/loadComponents.js?v=4"></script>
+
+<!-- PDF.js for rendering actual PDF cover -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+<script>
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+
+  document.querySelectorAll('.pdf-card-canvas').forEach(canvas => {
+    const url = canvas.getAttribute('data-pdf');
+    pdfjsLib.getDocument(url).promise.then(pdf => {
+      pdf.getPage(1).then(page => {
+        const viewport = page.getViewport({ scale: 1.5 });
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+        const renderContext = {
+          canvasContext: canvas.getContext('2d'),
+          viewport: viewport
+        };
+        page.render(renderContext);
+      });
+    }).catch(err => {
+      console.error("Error rendering PDF:", err);
+    });
+  });
+</script>
 </body>
 </html>
