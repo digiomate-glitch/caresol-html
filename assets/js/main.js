@@ -15,6 +15,16 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Mobile dropdown toggle
+  var mobileDropdownToggle = document.querySelector('.mobile-dropdown-toggle');
+  var mobileDropdown = document.querySelector('.mobile-dropdown');
+  if (mobileDropdownToggle && mobileDropdown) {
+    mobileDropdownToggle.addEventListener('click', function (e) {
+      e.preventDefault();
+      mobileDropdown.classList.toggle('open');
+    });
+  }
+
   // FAQ accordion
   document.querySelectorAll('.faq-item').forEach(function (item) {
     var q = item.querySelector('.faq-q');
